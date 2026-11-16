@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Víctor José Bitriago | Medicina Natural y Terapias Holísticas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F8FAF9] text-slate-700 antialiased selection:bg-emerald-200 selection:text-emerald-900">
+
+    <!-- Header / Barra de Navegación Holística con Total en la Cabecera -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3 text-center md:text-left">
+                <!-- LOGO ADICIONAL EN LA CABECERA -->
+                <img id="logo-header" src="logo.png" alt="Logo Víctor Bitriago" class="w-12 h-12 object-cover rounded-full border-2 border-emerald-600 shadow-sm" onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?w=100&auto=format&fit=crop&q=60'">
+                <div>
+                    <h1 class="text-xl font-bold text-emerald-900 tracking-tight">Víctor José Bitriago</h1>
+                    <p class="text-xs text-emerald-600 font-medium tracking-wider uppercase">Medicina Natural y Ancestral</p>
+                </div>
+            </div>
+
+            <!-- ETIQUETA EN LA CABECERA PARA EL MONTO TOTAL DEL CARRITO -->
+            <div class="bg-emerald-50 border border-emerald-200 px-4 py-2 rounded-2xl flex items-center gap-3 shadow-xs">
+                <span class="text-emerald-700 text-base">🛒</span>
+                <div>
+                    <p class="text-[10px] uppercase font-bold tracking-wider text-emerald-800">Total Solicitud</p>
+                    <p id="header-total-monto" class="text-sm font-extrabold text-emerald-900">$0.00</p>
+                </div>
+            </div>
+
+            <nav class="flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#catalogo" class="hover:text-emerald-700 transition">Servicios</a>
+                <a href="#curriculum" class="hover:text-emerald-700 transition">Trayectoria</a>
+                <a href="#galeria" class="hover:text-emerald-700 transition">Galería</a>
+                <a href="#evidencias" class="hover:text-emerald-700 transition">Testimonios</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner de Bienvenida -->
+    <section class="bg-gradient-to-b from-emerald-900 to-emerald-800 text-white py-16 px-6 text-center shadow-lg">
+        <div class="max-w-3xl mx-auto space-y-4">
+            <span class="bg-emerald-800/80 text-emerald-100 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest border border-emerald-600">Sana tu cuerpo de forma natural</span>
+            <h2 class="text-3xl md:text-4xl font-light leading-tight">Armonía y Bienestar para tu Salud Integral</h2>
+            <p class="text-emerald-100 text-sm md:text-base font-light max-w-xl mx-auto">Más de 20 años de experiencia transformando vidas a través de terapias ancestrales orientadas a recuperar tu paz interior y vitalidad física.</p>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
+        
+        <!-- Izquierda y Centro -->
+        <div class="lg:col-span-2 space-y-16">
+            
+            <!-- Catálogo de Servicios Terapéuticos -->
+            <section id="catalogo">
+                <div class="mb-6">
+                    <span class="text-emerald-600 font-semibold text-xs uppercase tracking-wider">Terapias y Diagnósticos</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Catálogo de Servicios Holísticos</h2>
+                </div>
+                <div id="lista-servicios" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Inyectado dinámicamente con JS -->
+                </div>
+            </section>
+
+            <!-- Currículum y Experiencia Cronológica con FOTO DE PERFIL -->
+            <section id="curriculum">
+                <div class="mb-6">
+                    <span class="text-emerald-600 font-semibold text-xs uppercase tracking-wider">Respaldo Ocupacional y Académico</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Currículum y Experiencia Cronológica</h2>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 mb-6 flex flex-col md:flex-row items-center gap-6">
+                    <div class="w-32 h-32 rounded-2xl overflow-hidden bg-emerald-50 border-2 border-emerald-600 shrink-0 shadow-md">
+                        <img id="foto-perfil" src="victor_perfil.jpg" alt="Víctor José Bitriago - Terapeuta" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80'">
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg">Dr. Víctor José Bitriago</h3>
+                        <p class="text-xs text-emerald-700 font-semibold mt-1">Naturopata y Especialista en Terapias Complementarias</p>
+                        <p class="text-xs text-slate-600 mt-2 leading-relaxed">Avalado por más de dos décadas de formación continua en instituciones nacionales e internacionales, brindando soluciones integrales a la salud física, mental y energética de sus pacientes.</p>
+                    </div>
+                </div>
+
+                <div id="lista-estudios" class="space-y-4">
+                    <!-- Inyectado dinámicamente con JS -->
+                </div>
+            </section>
+
+            <!-- GALERÍA DE MOMENTOS DEL TRABAJO -->
+            <section id="galeria">
+                <div class="mb-6">
+                    <span class="text-emerald-600 font-semibold text-xs uppercase tracking-wider">Momentos y Jornadas</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Galería de Trabajo Terapéutico</h2>
+                    <p class="text-xs text-slate-500 mt-1">Instantes capturados durante nuestras jornadas médicas, atenciones holísticas y prácticas de bienestar.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                        <img src="image_generation_content/7053491366699581453" alt="Jornada Biomagnetismo" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition duration-300">
+                        <p class="text-xs font-semibold text-slate-800 mt-3 px-1">Sesión de Biomagnetismo Holístico</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                        <img src="image_generation_content/10427285211879891813" alt="Jornada Acupuntura" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition duration-300">
+                        <p class="text-xs font-semibold text-slate-800 mt-3 px-1">Aplicación de Acupuntura Tradicional</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                        <img src="image_generation_content/9516182461653652285" alt="Ajuste Columna" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition duration-300">
+                        <p class="text-xs font-semibold text-slate-800 mt-3 px-1">Ajuste Bioenergético de Columna</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                        <img src="image_generation_content/14249350817129437918" alt="Analizador Cuántico" class="w-full h-48 object-cover rounded-xl hover:scale-105 transition duration-300">
+                        <p class="text-xs font-semibold text-slate-800 mt-3 px-1">Diagnóstico con Analizador Cuántico</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonios y Alianzas -->
+            <section id="evidencias">
+                <div class="mb-6">
+                    <span class="text-emerald-600 font-semibold text-xs uppercase tracking-wider">Confianza y Resultados</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Evidencias, Testimonios y Alianzas</h2>
+                </div>
+                <div id="lista-testimonios" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Inyectado dinámicamente con JS -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Columna Derecha: Carrito / Solicitud de Citas -->
+        <div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl shadow-slate-200/60 border border-emerald-50 sticky top-24">
+                <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
+                    <span class="text-emerald-700 text-lg">🌿</span>
+                    <h2 class="text-base font-bold text-slate-900">Tu Solicitud de Cita</h2>
+                </div>
+                
+                <div id="items-carrito" class="space-y-3 mb-6 max-h-60 overflow-y-auto pr-1">
+                    <p class="text-sm text-slate-400 italic text-center py-6">Tu carrito de servicios está vacío.</p>
+                </div>
+
+                <div class="border-t border-slate-100 pt-4 space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600">Nombre del Paciente</label>
+                        <input type="text" id="cliente-nombre" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:border-emerald-600 transition" placeholder="Ej. María Pérez">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-600">Cédula o Teléfono</label>
+                        <input type="text" id="cliente-contacto" class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm focus:outline-none focus:border-emerald-600 transition" placeholder="Ej. V-12345678">
+                    </div>
+
+                    <div class="flex justify-between items-center font-bold text-base pt-2 px-1">
+                        <span class="text-slate-600 text-sm">Total Estimado:</span>
+                        <span id="carrito-total" class="text-emerald-800 text-lg">$0.00</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <button onclick="vaciarCarrito()" class="bg-slate-100 text-slate-600 py-3 px-3 rounded-xl text-xs font-semibold hover:bg-slate-200 transition">Vaciar</button>
+                        <button onclick="enviarWhatsApp()" class="bg-emerald-700 text-white py-3 px-3 rounded-xl text-xs font-semibold hover:bg-emerald-800 transition shadow-md shadow-emerald-700/20 flex items-center justify-center gap-1">Enviar a WhatsApp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-emerald-100 mt-20 py-8 text-center text-xs text-slate-500">
+        <p>Víctor José Bitriago — Medicina Natural y Terapias Ancestrales. Venezuela.</p>
+    </footer>
+
+    <!-- Lógica de Javascript integrada -->
+    <script>
+        const datosGlobales = {
+          "informacion_general": {
+            "terapeuta": "Victor José Bitriago",
+            "whatsapp": "+584144992048"
+          },
+          "catalogo_servicios": [
+            { 
+              "id": "srv-01", 
+              "nombre": "Biomagnetismo (Par Biomagnético)", 
+              "categoria": "Terapias de Bienestar", 
+              "precio_referencial": 20.00, 
+              "descripcion": "Terapia que utiliza imanes de mediana intensidad para restablecer el pH energético.", 
+              "ficha_de_uso": "Colocación de imanes durante 30 a 45 minutos.", 
+              "tipo_paciente": "Personas con enfermedades crónicas o fatiga.",
+              "imagen_tag": "image_generation_content/7053491366699581453"
+            },
+            { 
+              "id": "srv-02", 
+              "nombre": "Acupuntura", 
+              "categoria": "Terapias de Bienestar", 
+              "precio_referencial": 20.00, 
+              "descripcion": "Inserción de finas agujas para estimular la energía vital.", 
+              "ficha_de_uso": "Sesiones de acupuntura focalizada.", 
+              "tipo_paciente": "Pacientes con dolores musculares o estrés.",
+              "imagen_tag": "image_generation_content/10427285211879891813"
+            },
+            { 
+              "id": "srv-03", 
+              "nombre": "Ajuste Bioenergético de la Columna", 
+              "categoria": "Terapias de Bienestar", 
+              "precio_referencial": 15.00, 
+              "descripcion": "Reordenamiento bioenergético de la columna vertebral.", 
+              "ficha_de_uso": "Corrección postural y liberación nerviosa.", 
+              "tipo_paciente": "Personas con lumbalgias o contracturas.",
+              "imagen_tag": "image_generation_content/9516182461653652285"
+            },
+            { 
+              "id": "srv-04", 
+              "nombre": "Reflexología", 
+              "categoria": "Terapias de Bienestar", 
+              "precio_referencial": 20.00, 
+              "descripcion": "Presión en zonas reflejas de los pies.", 
+              "ficha_de_uso": "Masaje digitopuntural plantar.", 
+              "tipo_paciente": "Ideal para problemas circulatorios y estrés.",
+              "imagen_tag": "image_generation_content/12262098682896218650"
+            },
+            { 
+              "id": "srv-05", 
+              "nombre": "Desintoxicación Iónica", 
+              "categoria": "Terapias de Bienestar", 
+              "precio_referencial": 25.00, 
+              "descripcion": "Baño de pies ionizado para depuración.", 
+              "ficha_de_uso": "Inmersión durante 30 minutos.", 
+              "tipo_paciente": "Personas con estrés o fatiga." 
+            },
+            { 
+              "id": "srv-06", 
+              "nombre": "Terapias de Control de Emociones", 
+              "categoria": "Terapias de Bienestar", 
+              "precio_referencial": 25.00, 
+              "descripcion": "Armonización de estados emocionales.", 
+              "ficha_de_uso": "Orientación integrativa natural.", 
+              "tipo_paciente": "Pacientes con ansiedad o estrés." 
+            },
+            { 
+              "id": "srv-07", 
+              "nombre": "Iridología", 
+              "categoria": "Exámenes y Diagnóstico", 
+              "precio_referencial": 20.00, 
+              "descripcion": "Evaluación del iris para conocer el estado de salud.", 
+              "ficha_de_uso": "Escaneo visual preventivo.", 
+              "tipo_paciente": "Búsqueda de diagnóstico integral.",
+              "imagen_tag": "image_generation_content/3843324685702630382"
+            },
+            { 
+              "id": "srv-08", 
+              "nombre": "Analizador Cuántico de Resonancia Magnética", 
+              "categoria": "Exámenes y Diagnóstico", 
+              "precio_referencial": 30.00, 
+              "descripcion": "Evaluación biofísica computarizada.", 
+              "ficha_de_uso": "Sensor de mano multiorgánico.", 
+              "tipo_paciente": "Chequeo rápido del sistema metabólico.",
+              "imagen_tag": "image_generation_content/14249350817129437918"
+            },
+            { 
+              "id": "srv-09", 
+              "nombre": "Promoción inicial", 
+              "categoria": "Exámenes y Diagnóstico", 
+              "precio_referencial": 15.00, 
+              "descripcion": "Evaluación biofísica computarizada.", 
+              "ficha_de_uso": "Sensor de mano multiorgánico.", 
+              "tipo_paciente": "Chequeo rápido del sistema metabólico.",
+              "imagen_tag": "image_generation_content/14249350817129437918"
+            },
+            { 
+              "id": "srv-10", 
+              "nombre": "Promoción 3 días", 
+              "categoria": "Exámenes y Diagnóstico", 
+              "precio_referencial": 45.00, 
+              "descripcion": "Evaluación biofísica computarizada.", 
+              "ficha_de_uso": "Sensor de mano multiorgánico.", 
+              "tipo_paciente": "Chequeo rápido del sistema metabólico.",
+              "imagen_tag": "image_generation_content/14249350817129437918"
+            }
+          ],
+          "curriculum_y_experiencia": {
+            "estudios_realizados": [
+              { 
+                "anio": "2026", 
+                "institucion": "Secretaría de Desarrollo Comunal de la Gobernación del Edo. Carabobo", 
+                "titulos": ["Naturopatía Nivel 1 y Avanzada"], 
+                "conocimientos_adquiridos": "Actualización clínica en naturopatía avanzada y protocolos integrativos comunitarios.", 
+                "solucion_terapeutica": "Aplicación clínica de tratamientos naturistas de alto nivel bajo respaldo oficial." 
+              },
+              { 
+                "anio": "2023", 
+                "institucion": "Universidad Rómulo Gallegos / Centro de Formación Maracay", 
+                "titulos": ["Diplomado en Naturología", "Introducción a la Fisioterapia", "Inyectología"], 
+                "conocimientos_adquiridos": "Estudio integral de la salud natural, vías de administración parenteral natural y fisioterapia.", 
+                "solucion_terapeutica": "Rehabilitación física integral, prevención y bienestar orgánico con respaldo universitario." 
+              },
+              { 
+                "anio": "2018 - 2019", 
+                "institucion": "Instituto Celce (Lima, Perú) / Colegio Universitario Padre Isaías Ojeda", 
+                "titulos": ["Diplomado en Bioquímica Aplicada", "Auto Hemoterapia", "Fitopreparados", "Medicina Biomagnética"], 
+                "conocimientos_adquiridos": "Bioquímica natural, depuración sanguínea, fitoterapia avanzada y par biomagnético.", 
+                "solucion_terapeutica": "Soporte bioquímico, erradicación de patógenos y depuración profunda del organismo." 
+              },
+              { 
+                "anio": "2013", 
+                "institucion": "E.E.A. General Rafael Urdaneta / U.P.E.L. Mérida / Acupuntores Sin Fronteras", 
+                "titulos": ["Terapia Neural Aplicada", "Medicina Terapéutica China", "Auxilios Médicos de Emergencia"], 
+                "conocimientos_adquiridos": "Bloqueo de campos interferentes, acupuntura clínica y protocolos de emergencia.", 
+                "solucion_terapeutica": "Eliminación instantánea de dolores crónicos localizados y soporte de salud urgente." 
+              },
+              { 
+                "anio": "2004 - 2012", 
+                "institucion": "Universidad de Carabobo / Bioscomo C.A. / Hovinat / Asoc. Venezolana de Shiatsu", 
+                "titulos": ["Masajes Terapéuticos Avanzados", "Cosmobiología", "Naturopatía y Herbología", "Salud Energética"], 
+                "conocimientos_adquiridos": "Biomecánica del masaje clínico, fitoterapia tradicional y sincronía biorrítmica.", 
+                "solucion_terapeutica": "Rehabilitación física de lesiones complejas, corrección postural y relajación profunda." 
+              }
+            ]
+          },
+          "evidencias_y_alianzas": {
+            "testimonios": [
+              { 
+                "paciente": "Paciente de Jornada Comunitaria", 
+                "ubicacion": "Upata, Edo. Bolívar", 
+                "comentario": "El ajuste bioenergético de la columna y el biomagnetismo aliviaron mi dolor lumbar crónico con gran profesionalismo y seguridad.", 
+                "terapia_aplicada": "Biomagnetismo y Ajuste de Columna" 
+              },
+              { 
+                "paciente": "Asistente a Jornada Médica Holística", 
+                "ubicacion": "Upata, Edo. Bolívar", 
+                "comentario": "La evaluación con el Analizador Cuántico me dio una paz mental enorme al conocer mi estado de salud exacto de forma no invasiva.", 
+                "terapia_aplicada": "Analizador Cuántico" 
+              }
+            ]
+          }
+        };
+
+        let carrito = [];
+        const whatsappNumero = datosGlobales.informacion_general.whatsapp.replace('+', '');
+
+        window.onload = function() {
+            renderServicios(datosGlobales.catalogo_servicios);
+            renderCurriculum(datosGlobales.curriculum_y_experiencia.estudios_realizados);
+            renderTestimonios(datosGlobales.evidencias_y_alianzas.testimonios);
+        };
+
+        function renderServicios(servicios) {
+            const contenedor = document.getElementById('lista-servicios');
+            contenedor.innerHTML = servicios.map(s => `
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        ${s.imagen_tag ? `<div class="mb-4 rounded-xl overflow-hidden h-40 bg-emerald-50"><img src="${s.imagen_tag}" alt="${s.nombre}" class="w-full h-full object-cover"></div>` : ''}
+                        <span class="text-[10px] uppercase font-bold tracking-wider bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full">${s.categoria}</span>
+                        <h3 class="font-bold text-slate-800 text-base mt-3">${s.nombre}</h3>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">${s.descripcion}</p>
+                        <p class="text-xs text-slate-600 mt-2 bg-slate-50 p-2 rounded-xl"><strong>Uso:</strong> ${s.ficha_de_uso}</p>
+                        <p class="text-xs text-emerald-800 font-medium mt-2">✨ <strong>Ideal para:</strong> ${s.tipo_paciente}</p>
+                    </div>
+                    <div class="mt-5 flex items-center justify-between border-t border-slate-50 pt-4">
+                        <span class="font-bold text-emerald-900 text-lg">$${s.precio_referencial.toFixed(2)}</span>
+                        <button onclick="agregarAlCarrito('${s.id}', '${s.nombre}', ${s.precio_referencial})" class="bg-emerald-700 text-white px-4 py-2 rounded-xl text-xs font-semibold hover:bg-emerald-800 transition shadow-sm">Solicitar Cita</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderCurriculum(estudios) {
+            const contenedor = document.getElementById('lista-estudios');
+            contenedor.innerHTML = estudios.map(e => `
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 border-l-4 border-l-emerald-600">
+                    <span class="text-xs font-bold bg-emerald-50 text-emerald-800 px-2.5 py-1 rounded-full">${e.anio}</span>
+                    <h3 class="font-bold text-slate-900 text-base mt-2">${Array.isArray(e.titulos) ? e.titulos.join(', ') : e.titulo}</h3>
+                    <p class="text-xs text-emerald-700 font-semibold mt-0.5">${e.institucion}</p>
+                    <p class="text-xs text-slate-600 mt-2"><strong>Conocimiento Adquirido:</strong> ${e.conocimientos_adquiridos}</p>
+                    <p class="text-xs text-slate-500 mt-1 italic"><strong>Solución Terapéutica:</strong> ${e.solucion_terapeutica}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderTestimonios(testimonios) {
+            const contenedor = document.getElementById('lista-testimonios');
+            contenedor.innerHTML = testimonios.map(t => `
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                    <p class="text-xs text-slate-600 italic leading-relaxed">"${t.comentario}"</p>
+                    <div class="mt-4 pt-3 border-t border-slate-50 flex justify-between items-center">
+                        <span class="text-xs font-bold text-slate-800">— ${t.paciente} (${t.ubicacion})</span>
+                        <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-medium">${t.terapia_aplicada}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function agregarAlCarrito(id, nombre, precio) {
+            const itemExistente = carrito.find(item => item.id === id);
+            if (itemExistente) {
+                itemExistente.cantidad++;
+            } else {
+                carrito.push({ id, nombre, precio, cantidad: 1 });
+            }
+            actualizarCarrito();
+        }
+
+        function cambiarCantidad(id, delta) {
+            const item = carrito.find(i => i.id === id);
+            if (item) {
+                item.cantidad += delta;
+                if (item.cantidad <= 0) {
+                    carrito = carrito.filter(i => i.id !== id);
+                }
+            }
+            actualizarCarrito();
+        }
+
+        function borrarItem(id) {
+            carrito = carrito.filter(i => i.id !== id);
+            actualizarCarrito();
+        }
+
+        function vaciarCarrito() {
+            carrito = [];
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const contenedor = document.getElementById('items-carrito');
+            const totalEl = document.getElementById('carrito-total');
+            const headerTotalEl = document.getElementById('header-total-monto');
+
+            if (carrito.length === 0) {
+                contenedor.innerHTML = `<p class="text-sm text-slate-400 italic text-center py-6">Tu carrito de servicios está vacío.</p>`;
+                totalEl.innerText = "$0.00";
+                headerTotalEl.innerText = "$0.00";
+                return;
+            }
+
+            let total = 0;
+            contenedor.innerHTML = carrito.map(item => {
+                total += item.precio * item.cantidad;
+                return `
+                    <div class="flex justify-between items-center text-xs bg-slate-50 p-2.5 rounded-xl">
+                        <div>
+                            <p class="font-bold text-slate-800">${item.nombre}</p>
+                            <p class="text-slate-500">$${item.precio} x ${item.cantidad}</p>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <button onclick="cambiarCantidad('${item.id}', -1)" class="bg-white border px-2 py-0.5 rounded-lg font-bold shadow-xs">-</button>
+                            <span class="px-1 font-semibold">${item.cantidad}</span>
+                            <button onclick="cambiarCantidad('${item.id}', 1)" class="bg-white border px-2 py-0.5 rounded-lg font-bold shadow-xs">+</button>
+                            <button onclick="borrarItem('${item.id}')" class="text-rose-500 font-bold ml-1 px-1">✕</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            totalEl.innerText = `$${total.toFixed(2)}`;
+            headerTotalEl.innerText = `$${total.toFixed(2)}`;
+        }
+
+        function enviarWhatsApp() {
+            if (carrito.length === 0) {
+                alert("Por favor selecciona al menos un servicio terapéutico.");
+                return;
+            }
+            const nombre = document.getElementById('cliente-nombre').value.trim() || "Paciente";
+            const contacto = document.getElementById('cliente-contacto').value.trim() || "No especificado";
+
+            let mensaje = `🌿 *SOLICITUD DE CITAS Y SERVICIOS* 🌿%0A`;
+            mensaje += `*Paciente:* ${nombre}%0A*Contacto:* ${contacto}%0A%0A*Servicios Seleccionados:*%0A`;
+
+            let total = 0;
+            carrito.forEach(item => {
+                let sub = item.precio * item.cantidad;
+                total += sub;
+                mensaje += `- ${item.cantidad}x ${item.nombre} ($${sub})%0A`;
+            });
+
+            mensaje += `%0A*Total Estimado:* $${total.toFixed(2)}%0A%0A¡Hola Víctor! Deseo coordinar esta cita para cuidar mi bienestar.`;
+
+            window.open(`https://wa.me/${whatsappNumero}?text=${mensaje}`, '_blank');
+        }
+    </script>
+</body>
+</html>
